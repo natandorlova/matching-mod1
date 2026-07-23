@@ -117,16 +117,16 @@
   /* --- Tray (сотрудники) --- */
   .tray{
    display:flex;
-    flex-direction:column;
-    align-items:stretch;
-    gap:16px;
-
-    padding:18px;
-    min-height:520px;
-
-    background:#faf9f6;
-    border:2px dashed var(--line);
-    border-radius:22px;
+    flex-direction:column;   /* карточки друг под другом */
+    align-items:flex-start;  /* прижать к левому краю */
+    gap:10px;                /* расстояние между карточками */
+    padding:12px;
+    background:rgba(255,255,255,.5);
+    border:1.5px dashed var(--line);
+    border-radius:var(--radius-lg);
+    min-height:260px;        /* высота поля */
+    position:sticky;
+    top:20px;
   }
 
   /* --- Employee badge card --- */
