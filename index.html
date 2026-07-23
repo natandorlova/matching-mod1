@@ -96,10 +96,9 @@
      ============================================================ */
   .board{
     display:grid;
-    grid-template-columns: 1fr 1.3fr;
-    gap:16px;
-    margin-top:14px;
-    align-items:start;
+    grid-template-columns:240px 1fr;
+    gap:18px;
+    align-items:stretch;
   }
   @media (max-width:760px){
     .board{ grid-template-columns:1fr; gap:12px; }
@@ -124,7 +123,7 @@
     background:rgba(255,255,255,.5);
     border:1.5px dashed var(--line);
     border-radius:var(--radius-lg);
-    min-height:96px;
+    height:96px;
   }
 
   /* --- Employee badge card --- */
