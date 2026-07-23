@@ -98,7 +98,7 @@
     display:grid;
     grid-template-columns:240px 1fr;
     gap:18px;
-    align-items:start;
+    align-items:stretch;
   }
   @media (max-width:760px){
     .board{ grid-template-columns:1fr; gap:12px; }
@@ -152,17 +152,12 @@
   }
   .card::before{
     /* badge clip */
-    content:"";
+   content:"";
     position:absolute;
-    left:18px;
-    top:-2px;
-
-    width:46px;
-    height:12px;
-
-    border-radius:0 0 8px 8px;
-
+    top:-4px; left:12px;
+    width:18px; height:8px;
     background:var(--navy);
+    border-radius:0 0 4px 4px;
   }
   .card:hover{ box-shadow:var(--shadow-hover); transform:translateY(-1px); }
   .card.dragging{
