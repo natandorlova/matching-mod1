@@ -134,27 +134,21 @@
     position:relative;
     display:flex;
     align-items:center;
-
-    width:100%;
-    min-height:72px;
-
-    padding:18px 20px 18px 18px;
-
-    background:#fff;
-
-    border-radius:18px;
-
-    box-shadow:0 8px 18px rgba(31,42,68,.08);
-
+    gap:8px;
+    background:var(--card-bg);
+    padding:10px 12px 10px 16px;
+    width:fit-content;
+    max-width:100%;
+    border-radius:var(--radius-sm);
+    box-shadow:var(--shadow);
     cursor:grab;
-
-    font-size:17px;
-    font-weight:700;
-    line-height:1.25;
-
-    white-space:normal;
-
-    transition:.2s;
+    user-select:none;
+    touch-action:none;
+    font-weight:600;
+    font-size:13px;
+    color:var(--text);
+    transition: box-shadow .18s ease, transform .18s ease;
+    border:1.5px solid transparent;
   }
   .card::before{
     /* badge clip */
