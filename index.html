@@ -65,7 +65,8 @@
      ============================================================ */
   .head{ margin-bottom:22px; }
   .eyebrow{
-    display:inline-flex; align-items:center; gap:8px;
+    display:none;
+    align-items:center; gap:8px;
     font-family:'Manrope',sans-serif;
     font-weight:700; font-size:12px; letter-spacing:.09em; text-transform:uppercase;
     color:var(--teal);
@@ -75,6 +76,7 @@
     margin-bottom:12px;
   }
   h1{
+    display:none;
     font-family:'Manrope',sans-serif;
     font-weight:800;
     font-size:clamp(22px,3.2vw,30px);
@@ -348,8 +350,8 @@
      чтобы получить новое задание без переписывания логики.
      ============================================================ */
   const EXERCISE = {
-    title: "Перетащите сотрудника к его функции",
-    instruction: "Перетащите карточку сотрудника в нужную зону справа. Когда все карточки будут расставлены — нажмите «Проверить».",
+    title: "",
+    instruction: "Соедините рабочую задачу с ответственным за нее сотрудником. Перетащите карточку сотрудника в нужную зону справа. Когда все карточки будут расставлены — нажмите «Проверить».",
     trayLabel: "Сотрудники",
     zonesLabel: "Функции",
     pairs: [
