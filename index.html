@@ -190,20 +190,23 @@
   }
   .zone-label{
     flex:1 1 auto;
-    padding:12px 12px;
-    font-size:12.5px;
+    padding:10px 12px;
+    font-size:12px;
     line-height:1.35;
     color:var(--text);
     border-left:3px solid var(--teal);
     display:flex;
     align-items:center;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
   }
   .zone-slot{
     flex:0 0 auto;
     width:48%;
     min-width:140px;
-    min-height:56px;
-    margin:6px 8px 6px 0;
+    min-height:48px;
+    margin:5px 8px 5px 0;
     border-radius:10px;
     border:2px dashed var(--line);
     display:flex;
@@ -423,7 +426,7 @@
       zone.className = 'zone';
       zone.setAttribute('data-pair', pair.id);
       zone.innerHTML = `
-        <div class="zone-label">${escapeHtml(pair.zone)}</div>
+        <div class="zone-label" title="${escapeHtml(pair.zone)}">${escapeHtml(pair.zone)}</div>
         <div class="zone-slot"></div>
       `;
       attachZoneEvents(zone.querySelector('.zone-slot'));
